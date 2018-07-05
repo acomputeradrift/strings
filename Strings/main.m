@@ -8,10 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+
 int main(int argc, const char * argv[]) {
+ 
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+      
+        NSString *firstName = (@"Jamie");
+        NSString *lastName = (@"Feeny");
+        NSString *fullName = [firstName stringByAppendingString: lastName];
+        NSLog(@"My Name is %@", fullName);
+        NSUInteger nameLength = [fullName length];
+        NSLog(@"The length of my full name is %lu", (unsigned long)nameLength);
+       
     }
     return 0;
 }
